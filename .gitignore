@@ -13,3 +13,8 @@ harness/results/**/*-stats.txt
 harness/results/**/diff/
 *.pyc
 .DS_Store
+
+# working notes never ship
+submissions/
+MR-DRAFT.md
+*.log
