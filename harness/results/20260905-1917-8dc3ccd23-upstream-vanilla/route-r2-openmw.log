@@ -1,0 +1,200 @@
+[19:34:27.073 *] Crash handler installed
+[19:34:27.134 *] Loading config file: <project>/openmw/build/OpenMW.app/Contents/Resources/openmw.cfg
+[19:34:27.134 *] Loading config file: <project>/harness/config/openmw.cfg
+[19:34:27.135 *] Loading config file: <project>/harness/results/20260905-1917-8dc3ccd23-upstream-vanilla/overlay/openmw.cfg
+[19:34:27.135 *] Logs dir: <project>/harness/results/20260905-1917-8dc3ccd23-upstream-vanilla/overlay
+[19:34:27.135 *] User data dir: <project>/harness/userdata
+[19:34:27.135 *] Screenshots dir: <project>/harness/userdata/screenshots
+[19:34:27.135 I] OpenMW version 0.52.0
+[19:34:27.135 I] Revision: 8dc3ccd234
+[19:34:27.135 I] Loading settings file: <project>/openmw/build/OpenMW.app/Contents/Resources/defaults.bin
+[19:34:27.136 I] Loading settings file: <project>/harness/config/settings.cfg
+[19:34:27.136 I] Using default (English) font encoding.
+[19:34:27.136 W] No such dir: <home>/Library/Application Support/openmw/data
+[19:34:27.136 I] OSG version: 3.6.5
+[19:34:27.136 I] SDL version: 2.32.10
+[19:34:27.136 I] Loading shader settings file: <project>/harness/results/20260905-1917-8dc3ccd23-upstream-vanilla/overlay/shaders.yaml
+[19:34:27.191 I] OpenGL Vendor: Apple
+[19:34:27.191 I] OpenGL Renderer: Apple M5 Pro
+[19:34:27.191 I] OpenGL Version: 2.1 Metal - 90.5
+[19:34:27.191 W] GL_ARB_clip_control not supported: disabling reverse-z depth buffer
+[19:34:27.192 I] Adding BSA archive <project>/Morrowind/Data Files/Morrowind.bsa
+[19:34:27.193 I] Adding BSA archive <project>/Morrowind/Data Files/Tribunal.bsa
+[19:34:27.193 I] Adding BSA archive <project>/Morrowind/Data Files/Bloodmoon.bsa
+[19:34:27.193 I] Adding data directory <project>/openmw/build/OpenMW.app/Contents/Resources/../Resources/resources/vfs
+[19:34:27.194 I] Adding data directory <project>/openmw/build/OpenMW.app/Contents/Resources/../Resources/resources/vfs-mw
+[19:34:27.194 I] Adding data directory <project>/Morrowind/Data Files
+[19:34:27.209 I] Adding data directory <project>/harness/mod
+[19:34:27.213 I] Preferred locales: gmst en
+[19:34:27.213 I] Initializing LuaUtil::LuaState without profiler
+[19:34:27.213 I] Lua version: Lua 5.1.4 (LuaJIT 2.1.1767980792)
+[19:34:27.213 I] Loading keybindings file: <project>/harness/results/20260905-1917-8dc3ccd23-upstream-vanilla/overlay/input_v3.xml
+[19:34:27.213 I] Loading TrueType font file fonts/mysticcards.omwfont
+[19:34:27.216 I] Loading TrueType font file fonts/demonicletters.omwfont
+[19:34:27.217 I] Loading TrueType font file fonts/dejavulgcsansmono.omwfont
+[19:34:27.225 I] Sound disabled.
+[19:34:27.225 I] Loading Lua storage "<project>/harness/results/20260905-1917-8dc3ccd23-upstream-vanilla/overlay/global_storage.bin" (140 bytes)
+[19:34:27.225 I] Loading Lua storage "<project>/harness/results/20260905-1917-8dc3ccd23-upstream-vanilla/overlay/player_storage.bin" (878 bytes)
+[19:34:27.228 I] Loading content file builtin.omwscripts
+[19:34:27.228 I] Loading content file Morrowind.esm
+[19:34:27.380 I] Loading content file Tribunal.esm
+[19:34:27.400 I] Loading content file Bloodmoon.esm
+[19:34:27.428 I] Loading content file bench.omwscripts
+[19:34:27.429 V] Lua scripts configuration (45 scripts):
+[19:34:27.429 V] #0 MENU PLAYER : scripts/omw/mwui/init.lua
+[19:34:27.429 V] #1 MENU : scripts/omw/settings/menu.lua
+[19:34:27.429 V] #2 PLAYER : scripts/omw/settings/player.lua
+[19:34:27.429 V] #3 GLOBAL : scripts/omw/settings/global.lua
+[19:34:27.429 V] #4 GLOBAL : scripts/omw/activationhandlers.lua
+[19:34:27.429 V] #5 GLOBAL : scripts/omw/usehandlers.lua
+[19:34:27.429 V] #6 GLOBAL : scripts/omw/worldeventhandlers.lua
+[19:34:27.429 V] #7 GLOBAL : scripts/omw/crimes.lua
+[19:34:27.429 V] #8 PLAYER CREATURE NPC : scripts/omw/mechanics/animationcontroller.lua
+[19:34:27.429 V] #9 PLAYER : scripts/omw/skillhandlers.lua
+[19:34:27.429 V] #10 PLAYER : scripts/omw/mechanics/playercontroller.lua
+[19:34:27.429 V] #11 MENU : scripts/omw/camera/settings.lua
+[19:34:27.429 V] #12 MENU : scripts/omw/input/settings.lua
+[19:34:27.429 V] #13 PLAYER : scripts/omw/input/playercontrols.lua
+[19:34:27.429 V] #14 PLAYER : scripts/omw/camera/camera.lua
+[19:34:27.429 V] #15 PLAYER : scripts/omw/input/actionbindings.lua
+[19:34:27.429 V] #16 PLAYER : scripts/omw/input/smoothmovement.lua
+[19:34:27.429 V] #17 PLAYER : scripts/omw/input/gamepadcontrols.lua
+[19:34:27.429 V] #18 NPC CREATURE : scripts/omw/ai.lua
+[19:34:27.429 V] #19 GLOBAL : scripts/omw/mechanics/globalcontroller.lua
+[19:34:27.429 V] #20 PLAYER CREATURE NPC : scripts/omw/mechanics/actorcontroller.lua
+[19:34:27.429 V] #21 PLAYER NPC CREATURE : scripts/omw/combat/interface_local.lua
+[19:34:27.429 V] #22 GLOBAL : scripts/omw/combat/interface_global.lua
+[19:34:27.429 V] #23 PLAYER CREATURE NPC : scripts/omw/spellcasting/interface_local.lua
+[19:34:27.429 V] #24 GLOBAL : scripts/omw/spellcasting/interface_global.lua
+[19:34:27.429 V] #25 GLOBAL : scripts/omw/mechanics/projectiles.lua
+[19:34:27.429 V] #26 PLAYER : scripts/omw/ui.lua
+[19:34:27.429 V] #27 MENU : scripts/omw/console/menu.lua
+[19:34:27.429 V] #28 PLAYER : scripts/omw/console/player.lua
+[19:34:27.429 V] #29 GLOBAL : scripts/omw/console/global.lua
+[19:34:27.429 V] #30 CUSTOM : scripts/omw/console/local.lua
+[19:34:27.429 V] #31 NPC CREATURE : scripts/omw/music/actor.lua
+[19:34:27.429 V] #32 GLOBAL : scripts/omw/cellhandlers.lua
+[19:34:27.429 V] #33 GLOBAL : scripts/omw/combat/global.lua
+[19:34:27.429 V] #34 PLAYER : scripts/omw/combat/settingspage.lua
+[19:34:27.429 V] #35 PLAYER NPC CREATURE : scripts/omw/combat/local.lua
+[19:34:27.429 V] #36 PLAYER : scripts/omw/music/music.lua
+[19:34:27.429 V] #37 MENU : scripts/omw/music/settings.lua
+[19:34:27.429 V] #38 PLAYER : scripts/omw/playerskillhandlers.lua
+[19:34:27.429 V] #39 LOAD : scripts/omw/esmfallbacks.lua
+[19:34:27.429 V] #40 PLAYER CREATURE NPC : scripts/omw/spellcasting/local.lua
+[19:34:27.429 V] #41 DOOR CONTAINER : scripts/omw/spellcasting/lockable.lua
+[19:34:27.429 V] #42 GLOBAL : scripts/omw/spellcasting/global.lua
+[19:34:27.429 V] #43 GLOBAL : scripts/bench/global.lua
+[19:34:27.429 V] #44 PLAYER : scripts/bench/player.lua
+[19:34:27.440 V] Enchantment "test magic axe": dropping unexpected skill argument of "FortifyMaximumMagicka" effect
+[19:34:27.511 I] Using 1 async physics threads
+[19:34:27.511 I] Using <project>/harness/userdata/navmesh.db to store navigation mesh cache
+[19:34:27.511 V] Using idle priority for thread=0x16b567000
+[19:34:27.511 I] Reserving texture units for shadow maps: 13..15
+[19:34:27.512 I] Reserving texture unit for opaque depth texture: 12
+[19:34:27.512 I] Reserving texture unit for opaque color texture: 11
+[19:34:27.513 V] Disabling Multiview (disabled by config)
+[19:34:27.516 V] Language file "l10n/Interface/gmst.yaml" is enabled
+[19:34:27.516 V] Language file "l10n/Interface/en.yaml" is enabled
+[19:34:27.524 V] Language file "l10n/OMWEngine/gmst.yaml" is enabled
+[19:34:27.525 V] Language file "l10n/OMWEngine/en.yaml" is enabled
+[19:34:27.534 V] Language file "l10n/OMWShaders/en.yaml" is enabled
+[19:34:27.542 V] Language file "l10n/OMWCamera/en.yaml" is enabled
+[19:34:27.543 V] Language file "l10n/OMWControls/en.yaml" is enabled
+[19:34:27.543 V] Language file "l10n/interface/gmst.yaml" is enabled
+[19:34:27.543 V] Language file "l10n/interface/en.yaml" is enabled
+[19:34:27.544 V] Language file "l10n/Calendar/gmst.yaml" is enabled
+[19:34:27.544 V] Language file "l10n/Calendar/en.yaml" is enabled
+[19:34:27.544 V] Language file "l10n/OMWMusic/en.yaml" is enabled
+[19:34:27.544 I] OSG stats will be written to: <project>/harness/results/20260905-1917-8dc3ccd23-upstream-vanilla/route-r2-stats.txt
+[19:34:27.549 I] Starting a new game
+[19:34:27.551 V] Language file "l10n/Mechanics/gmst.yaml" is enabled
+[19:34:27.577 I] Loading cell Bitter Coast Region (0, -10)
+[19:34:27.596 I] Loading cell Ascadian Isles Region (0, -9)
+[19:34:27.613 I] Loading cell Bitter Coast Region (-1, -10)
+[19:34:27.616 I] Loading cell Bitter Coast Region (0, -11)
+[19:34:27.619 I] Loading cell Ascadian Isles Region (1, -10)
+[19:34:27.623 I] Loading cell Bitter Coast Region (-1, -9)
+[19:34:27.628 I] Loading cell Ascadian Isles Region (1, -9)
+[19:34:27.634 I] Loading cell Bitter Coast Region (-1, -11)
+[19:34:27.639 I] Loading cell Ascadian Isles Region (1, -11)
+[19:34:27.645 V] Language file "l10n/OMWCombat/en.yaml" is enabled
+[19:34:27.677 I] Global[scripts/bench/global.lua]:	BENCH station=route startcell="bitter coast region" frame=1
+[19:34:27.750 I] Unloading cell Bitter Coast Region (0, -10)
+[19:34:27.751 I] Unloading cell Bitter Coast Region (-1, -11)
+[19:34:27.751 I] Unloading cell Bitter Coast Region (0, -11)
+[19:34:27.751 I] Unloading cell Ascadian Isles Region (0, -9)
+[19:34:27.752 I] Unloading cell Ascadian Isles Region (1, -11)
+[19:34:27.752 I] Unloading cell Ascadian Isles Region (1, -10)
+[19:34:27.752 I] Unloading cell Ascadian Isles Region (1, -9)
+[19:34:27.753 I] Loading cell Seyda Neen (-2, -9)
+[19:34:27.758 V] Controller R2_Claw02 present more than once in meshes/r/xsiltstrider.kf, ignoring later version
+[19:34:27.775 I] Loading cell Bitter Coast Region (-2, -8)
+[19:34:27.778 I] Loading cell Bitter Coast Region (-3, -9)
+[19:34:27.780 I] Loading cell Seyda Neen (-2, -10)
+[19:34:27.780 I] Warning: lookoutScript[local variables] line 41, column 37 (=): invalid operator =, treating it as ==
+[19:34:27.784 I] Loading cell Ascadian Isles Region (-1, -8)
+[19:34:27.788 I] Loading cell Bitter Coast Region (-3, -8)
+[19:34:27.791 I] Loading cell Bitter Coast Region (-3, -10)
+[19:34:27.794 I] AiTravel: -8914, -73093, 126
+[19:34:27.794 I] Warning: lookoutScript line 41, column 37 (=): invalid operator =, treating it as ==
+[19:34:27.794 I] Warning: fallingScript line 46, column 6 (endif): endif without matching if/elseif
+[19:34:27.956 I] L@0x1[scripts/bench/player.lua]:	BENCH camera station=route yaw=0 pitch=6
+[19:34:28.139 I] Global[scripts/bench/global.lua]:	BENCH station=route ready frame=40 simtime=0.48
+[19:34:28.139 I] Global[scripts/bench/global.lua]:	BENCH route cell=-2,-9 pos=(-11000,-69995) simtime=0.48
+[19:34:32.604 I] Unloading cell Bitter Coast Region (-3, -10)
+[19:34:32.604 I] Unloading cell Seyda Neen (-2, -10)
+[19:34:32.605 I] Unloading cell Bitter Coast Region (-1, -10)
+[19:34:32.605 I] Loading cell Ascadian Isles Region (-2, -7)
+[19:34:32.606 I] Loading cell Ascadian Isles Region (-1, -7)
+[19:34:32.608 I] Loading cell Ascadian Isles Region (-3, -7)
+[19:34:32.613 I] Global[scripts/bench/global.lua]:	BENCH route cell=-2,-8 pos=(-11000,-65530) simtime=4.95
+[19:34:40.938 I] Unloading cell Seyda Neen (-2, -9)
+[19:34:40.939 I] Unloading cell Bitter Coast Region (-3, -9)
+[19:34:40.939 I] Unloading cell Bitter Coast Region (-1, -9)
+[19:34:40.940 I] Loading cell Ascadian Isles Region (-2, -6)
+[19:34:40.943 I] Loading cell Ascadian Isles Region (-1, -6)
+[19:34:40.944 I] Loading cell Ascadian Isles Region (-3, -6)
+[19:34:40.950 I] Global[scripts/bench/global.lua]:	BENCH route cell=-2,-7 pos=(-12165,-57339) simtime=13.28
+[19:34:49.386 I] Unloading cell Bitter Coast Region (-3, -8)
+[19:34:49.387 I] Unloading cell Bitter Coast Region (-2, -8)
+[19:34:49.387 I] Unloading cell Ascadian Isles Region (-1, -8)
+[19:34:49.388 I] Loading cell Ascadian Isles Region (-2, -5)
+[19:34:49.389 I] Loading cell Ascadian Isles Region (-1, -5)
+[19:34:49.391 I] Loading cell Ascadian Isles Region (-3, -5)
+[19:34:49.395 I] Global[scripts/bench/global.lua]:	BENCH route cell=-2,-6 pos=(-14214,-49143) simtime=21.73
+[19:34:57.827 I] Unloading cell Ascadian Isles Region (-3, -7)
+[19:34:57.827 I] Unloading cell Ascadian Isles Region (-1, -7)
+[19:34:57.827 I] Unloading cell Ascadian Isles Region (-2, -7)
+[19:34:57.828 I] Loading cell Ascadian Isles Region (-2, -4)
+[19:34:57.828 I] Loading cell Ascadian Isles Region (-1, -4)
+[19:34:57.829 I] Loading cell Ascadian Isles Region (-3, -4)
+[19:34:57.836 I] Global[scripts/bench/global.lua]:	BENCH route cell=-2,-5 pos=(-16261,-40954) simtime=30.17
+[19:34:58.344 I] Unloading cell Ascadian Isles Region (-1, -6)
+[19:34:58.344 I] Unloading cell Ascadian Isles Region (-1, -4)
+[19:34:58.344 I] Unloading cell Ascadian Isles Region (-1, -5)
+[19:34:58.345 I] Loading cell Ascadian Isles Region (-4, -5)
+[19:34:58.346 I] Loading cell Ascadian Isles Region (-4, -4)
+[19:34:58.349 I] Loading cell Bitter Coast Region (-4, -6)
+[19:34:58.355 I] Global[scripts/bench/global.lua]:	BENCH route cell=-3,-5 pos=(-16386,-40453) simtime=30.69
+[19:34:58.360 V] Controller R2_Claw02 present more than once in meshes/r/xsiltstrider.kf, ignoring later version
+[19:35:06.275 I] Unloading cell Ascadian Isles Region (-2, -6)
+[19:35:06.276 I] Unloading cell Ascadian Isles Region (-3, -6)
+[19:35:06.276 I] Unloading cell Bitter Coast Region (-4, -6)
+[19:35:06.277 I] Loading cell Balmora (-3, -3)
+[19:35:06.282 I] Loading cell West Gash Region (-2, -3)
+[19:35:06.283 I] Loading cell West Gash Region (-4, -3)
+[19:35:06.285 I] Warning: OutsideBanner line 38, column 6 (endif): endif without matching if/elseif
+[19:35:06.290 I] Global[scripts/bench/global.lua]:	BENCH route cell=-3,-4 pos=(-18310,-32758) simtime=38.62
+[19:35:14.552 I] Unloading cell Ascadian Isles Region (-3, -5)
+[19:35:14.553 I] Unloading cell Ascadian Isles Region (-2, -5)
+[19:35:14.553 I] Unloading cell Ascadian Isles Region (-4, -5)
+[19:35:14.554 I] Loading cell Balmora (-3, -2)
+[19:35:14.563 I] Loading cell Balmora (-2, -2)
+[19:35:14.566 I] Loading cell Balmora (-4, -2)
+[19:35:14.574 I] Global[scripts/bench/global.lua]:	BENCH route cell=-3,-3 pos=(-19000,-24566) simtime=46.90
+[19:35:21.027 I] Saving shader settings file: <project>/harness/results/20260905-1917-8dc3ccd23-upstream-vanilla/overlay/shaders.yaml
+[19:35:21.028 I] Saving Lua storage "<project>/harness/results/20260905-1917-8dc3ccd23-upstream-vanilla/overlay/global_storage.bin" (140 bytes)
+[19:35:21.028 I] Saving Lua storage "<project>/harness/results/20260905-1917-8dc3ccd23-upstream-vanilla/overlay/player_storage.bin" (878 bytes)
+[19:35:21.068 I] Saved input bindings: <project>/harness/results/20260905-1917-8dc3ccd23-upstream-vanilla/overlay/input_v3.xml
+[19:35:21.095 I] Quitting peacefully.

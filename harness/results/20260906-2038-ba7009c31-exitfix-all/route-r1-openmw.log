@@ -1,0 +1,194 @@
+[20:41:38.001 *] Loading config file: <project>/openmw/build/OpenMW.app/Contents/Resources/openmw.cfg
+[20:41:38.001 *] Loading config file: <project>/harness/config/openmw.cfg
+[20:41:38.002 *] Loading config file: <project>/harness/results/20260906-2038-ba7009c31-exitfix-all/overlay/openmw.cfg
+[20:41:38.002 *] Logs dir: <project>/harness/results/20260906-2038-ba7009c31-exitfix-all/overlay
+[20:41:38.002 *] User data dir: <project>/harness/userdata
+[20:41:38.002 *] Screenshots dir: <project>/harness/userdata/screenshots
+[20:41:38.002 I] OpenMW version 0.52.0
+[20:41:38.002 I] Revision: 5f9709d77e
+[20:41:38.002 I] Loading settings file: <project>/openmw/build/OpenMW.app/Contents/Resources/defaults.bin
+[20:41:38.003 I] Loading settings file: <project>/harness/config/settings.cfg
+[20:41:38.003 I] Loading settings file: <project>/harness/results/20260906-2038-ba7009c31-exitfix-all/overlay/settings.cfg
+[20:41:38.003 I] Using default (English) font encoding.
+[20:41:38.003 W] No such dir: <home>/Library/Application Support/openmw/data
+[20:41:38.003 I] OSG version: 3.6.5
+[20:41:38.003 I] SDL version: 2.32.10
+[20:41:38.004 I] Loading shader settings file: <project>/harness/results/20260906-2038-ba7009c31-exitfix-all/overlay/shaders.yaml
+[20:41:38.029 E] Error: Failed to read window icon, no png readerwriter found
+[20:41:38.029 W] Requesting an OpenGL 3.3 core profile context
+[20:41:38.052 I] OpenGL Vendor: Apple
+[20:41:38.052 I] OpenGL Renderer: Apple M5 Pro
+[20:41:38.052 I] OpenGL Version: 4.1 Metal - 90.5
+[20:41:38.052 I] Core profile: granted 19 version-implied GL features on a GL 4.1 context
+[20:41:38.052 I] Core profile: vertex attribute aliasing and matrix uniforms enabled, 26 fixed-function modes disabled
+[20:41:38.052 W] GL_ARB_clip_control not supported: disabling reverse-z depth buffer
+[20:41:38.052 I] Adding BSA archive <project>/Morrowind/Data Files/Morrowind.bsa
+[20:41:38.053 I] Adding BSA archive <project>/Morrowind/Data Files/Tribunal.bsa
+[20:41:38.053 I] Adding BSA archive <project>/Morrowind/Data Files/Bloodmoon.bsa
+[20:41:38.054 I] Adding data directory <project>/openmw/build/OpenMW.app/Contents/Resources/../Resources/resources/vfs
+[20:41:38.054 I] Adding data directory <project>/openmw/build/OpenMW.app/Contents/Resources/../Resources/resources/vfs-mw
+[20:41:38.054 I] Adding data directory <project>/Morrowind/Data Files
+[20:41:38.069 I] Adding data directory <project>/harness/mod
+[20:41:38.074 I] Preferred locales: gmst en
+[20:41:38.074 I] Initializing LuaUtil::LuaState without profiler
+[20:41:38.074 I] Lua version: Lua 5.1.4 (LuaJIT 2.1.1767980792)
+[20:41:38.074 I] Loading keybindings file: <project>/harness/results/20260906-2038-ba7009c31-exitfix-all/overlay/input_v3.xml
+[20:41:38.074 I] Loading TrueType font file fonts/mysticcards.omwfont
+[20:41:38.077 I] Loading TrueType font file fonts/demonicletters.omwfont
+[20:41:38.078 I] Loading TrueType font file fonts/dejavulgcsansmono.omwfont
+[20:41:38.087 I] Sound disabled.
+[20:41:38.087 I] Loading Lua storage "<project>/harness/results/20260906-2038-ba7009c31-exitfix-all/overlay/global_storage.bin" (140 bytes)
+[20:41:38.087 I] Loading Lua storage "<project>/harness/results/20260906-2038-ba7009c31-exitfix-all/overlay/player_storage.bin" (878 bytes)
+[20:41:38.090 I] Loading content file builtin.omwscripts
+[20:41:38.090 I] Loading content file Morrowind.esm
+[20:41:38.090 E] Error loading splash/splash_spherecenturion.tga: no readerwriter for 'tga' found
+[20:41:38.245 I] Loading content file Tribunal.esm
+[20:41:38.265 I] Loading content file Bloodmoon.esm
+[20:41:38.292 I] Loading content file bench.omwscripts
+[20:41:38.292 V] Lua scripts configuration (45 scripts):
+[20:41:38.292 V] #0 MENU PLAYER : scripts/omw/mwui/init.lua
+[20:41:38.292 V] #1 MENU : scripts/omw/settings/menu.lua
+[20:41:38.292 V] #2 PLAYER : scripts/omw/settings/player.lua
+[20:41:38.292 V] #3 GLOBAL : scripts/omw/settings/global.lua
+[20:41:38.292 V] #4 GLOBAL : scripts/omw/activationhandlers.lua
+[20:41:38.292 V] #5 GLOBAL : scripts/omw/usehandlers.lua
+[20:41:38.292 V] #6 GLOBAL : scripts/omw/worldeventhandlers.lua
+[20:41:38.292 V] #7 GLOBAL : scripts/omw/crimes.lua
+[20:41:38.292 V] #8 PLAYER CREATURE NPC : scripts/omw/mechanics/animationcontroller.lua
+[20:41:38.292 V] #9 PLAYER : scripts/omw/skillhandlers.lua
+[20:41:38.292 V] #10 PLAYER : scripts/omw/mechanics/playercontroller.lua
+[20:41:38.292 V] #11 MENU : scripts/omw/camera/settings.lua
+[20:41:38.292 V] #12 MENU : scripts/omw/input/settings.lua
+[20:41:38.292 V] #13 PLAYER : scripts/omw/input/playercontrols.lua
+[20:41:38.292 V] #14 PLAYER : scripts/omw/camera/camera.lua
+[20:41:38.292 V] #15 PLAYER : scripts/omw/input/actionbindings.lua
+[20:41:38.292 V] #16 PLAYER : scripts/omw/input/smoothmovement.lua
+[20:41:38.292 V] #17 PLAYER : scripts/omw/input/gamepadcontrols.lua
+[20:41:38.292 V] #18 NPC CREATURE : scripts/omw/ai.lua
+[20:41:38.292 V] #19 GLOBAL : scripts/omw/mechanics/globalcontroller.lua
+[20:41:38.292 V] #20 PLAYER CREATURE NPC : scripts/omw/mechanics/actorcontroller.lua
+[20:41:38.292 V] #21 PLAYER NPC CREATURE : scripts/omw/combat/interface_local.lua
+[20:41:38.292 V] #22 GLOBAL : scripts/omw/combat/interface_global.lua
+[20:41:38.292 V] #23 PLAYER CREATURE NPC : scripts/omw/spellcasting/interface_local.lua
+[20:41:38.292 V] #24 GLOBAL : scripts/omw/spellcasting/interface_global.lua
+[20:41:38.292 V] #25 GLOBAL : scripts/omw/mechanics/projectiles.lua
+[20:41:38.292 V] #26 PLAYER : scripts/omw/ui.lua
+[20:41:38.292 V] #27 MENU : scripts/omw/console/menu.lua
+[20:41:38.292 V] #28 PLAYER : scripts/omw/console/player.lua
+[20:41:38.292 V] #29 GLOBAL : scripts/omw/console/global.lua
+[20:41:38.292 V] #30 CUSTOM : scripts/omw/console/local.lua
+[20:41:38.292 V] #31 NPC CREATURE : scripts/omw/music/actor.lua
+[20:41:38.292 V] #32 GLOBAL : scripts/omw/cellhandlers.lua
+[20:41:38.292 V] #33 GLOBAL : scripts/omw/combat/global.lua
+[20:41:38.292 V] #34 PLAYER : scripts/omw/combat/settingspage.lua
+[20:41:38.292 V] #35 PLAYER NPC CREATURE : scripts/omw/combat/local.lua
+[20:41:38.292 V] #36 PLAYER : scripts/omw/music/music.lua
+[20:41:38.292 V] #37 MENU : scripts/omw/music/settings.lua
+[20:41:38.292 V] #38 PLAYER : scripts/omw/playerskillhandlers.lua
+[20:41:38.292 V] #39 LOAD : scripts/omw/esmfallbacks.lua
+[20:41:38.292 V] #40 PLAYER CREATURE NPC : scripts/omw/spellcasting/local.lua
+[20:41:38.292 V] #41 DOOR CONTAINER : scripts/omw/spellcasting/lockable.lua
+[20:41:38.292 V] #42 GLOBAL : scripts/omw/spellcasting/global.lua
+[20:41:38.292 V] #43 GLOBAL : scripts/bench/global.lua
+[20:41:38.292 V] #44 PLAYER : scripts/bench/player.lua
+[20:41:38.303 V] Enchantment "test magic axe": dropping unexpected skill argument of "FortifyMaximumMagicka" effect
+[20:41:38.376 I] Using 1 async physics threads
+[20:41:38.376 I] Using <project>/harness/userdata/navmesh.db to store navigation mesh cache
+[20:41:38.377 V] Using idle priority for thread=0x16c3ef000
+[20:41:38.377 I] Reserving texture units for shadow maps: 13..15
+[20:41:38.378 I] Reserving texture unit for opaque depth texture: 12
+[20:41:38.378 I] Reserving texture unit for opaque color texture: 11
+[20:41:38.378 V] Disabling Multiview (disabled by config)
+[20:41:38.382 V] Language file "l10n/Interface/gmst.yaml" is enabled
+[20:41:38.382 V] Language file "l10n/Interface/en.yaml" is enabled
+[20:41:38.391 V] Language file "l10n/OMWEngine/gmst.yaml" is enabled
+[20:41:38.391 V] Language file "l10n/OMWEngine/en.yaml" is enabled
+[20:41:38.401 V] Language file "l10n/OMWShaders/en.yaml" is enabled
+[20:41:38.409 V] Language file "l10n/OMWCamera/en.yaml" is enabled
+[20:41:38.410 V] Language file "l10n/OMWControls/en.yaml" is enabled
+[20:41:38.410 V] Language file "l10n/interface/gmst.yaml" is enabled
+[20:41:38.410 V] Language file "l10n/interface/en.yaml" is enabled
+[20:41:38.411 V] Language file "l10n/Calendar/gmst.yaml" is enabled
+[20:41:38.411 V] Language file "l10n/Calendar/en.yaml" is enabled
+[20:41:38.411 V] Language file "l10n/OMWMusic/en.yaml" is enabled
+[20:41:38.411 I] OSG stats will be written to: <project>/harness/results/20260906-2038-ba7009c31-exitfix-all/route-r1-stats.txt
+[20:41:38.416 I] Starting a new game
+[20:41:38.419 V] Language file "l10n/Mechanics/gmst.yaml" is enabled
+[20:41:38.446 E] Error loading splash/splash_clanndaddy.tga: no readerwriter for 'tga' found
+[20:41:38.446 I] Loading cell Bitter Coast Region (0, -10)
+[20:41:38.464 I] Loading cell Ascadian Isles Region (0, -9)
+[20:41:38.487 I] Loading cell Bitter Coast Region (-1, -10)
+[20:41:38.493 I] Loading cell Bitter Coast Region (0, -11)
+[20:41:38.495 I] Loading cell Ascadian Isles Region (1, -10)
+[20:41:38.501 I] Loading cell Bitter Coast Region (-1, -9)
+[20:41:38.506 I] Loading cell Ascadian Isles Region (1, -9)
+[20:41:38.515 I] Loading cell Bitter Coast Region (-1, -11)
+[20:41:38.525 I] Loading cell Ascadian Isles Region (1, -11)
+[20:41:38.535 V] Language file "l10n/OMWCombat/en.yaml" is enabled
+[20:41:38.564 I] Global[scripts/bench/global.lua]:	BENCH station=route startcell="bitter coast region" frame=1
+[20:41:38.665 I] Unloading cell Bitter Coast Region (0, -10)
+[20:41:38.666 E] Error: Unable to write fog, can't find a png ReaderWriter
+[20:41:38.666 I] Unloading cell Bitter Coast Region (-1, -11)
+[20:41:38.666 I] Unloading cell Bitter Coast Region (0, -11)
+[20:41:38.667 I] Unloading cell Ascadian Isles Region (0, -9)
+[20:41:38.667 I] Unloading cell Ascadian Isles Region (1, -11)
+[20:41:38.667 I] Unloading cell Ascadian Isles Region (1, -10)
+[20:41:38.667 I] Unloading cell Ascadian Isles Region (1, -9)
+[20:41:38.669 I] Loading cell Seyda Neen (-2, -9)
+[20:41:38.674 V] Controller R2_Claw02 present more than once in meshes/r/xsiltstrider.kf, ignoring later version
+[20:41:38.692 I] Loading cell Bitter Coast Region (-2, -8)
+[20:41:38.696 I] Loading cell Bitter Coast Region (-3, -9)
+[20:41:38.698 I] Loading cell Seyda Neen (-2, -10)
+[20:41:38.698 I] Warning: lookoutScript[local variables] line 41, column 37 (=): invalid operator =, treating it as ==
+[20:41:38.701 I] Loading cell Ascadian Isles Region (-1, -8)
+[20:41:38.706 I] Loading cell Bitter Coast Region (-3, -8)
+[20:41:38.709 I] Loading cell Bitter Coast Region (-3, -10)
+[20:41:38.712 I] AiTravel: -8914, -73093, 126
+[20:41:38.712 I] Warning: lookoutScript line 41, column 37 (=): invalid operator =, treating it as ==
+[20:41:38.712 I] Warning: fallingScript line 46, column 6 (endif): endif without matching if/elseif
+[20:41:38.873 I] L@0x1[scripts/bench/player.lua]:	BENCH camera station=route yaw=0 pitch=6
+[20:41:39.120 I] Global[scripts/bench/global.lua]:	BENCH station=route ready frame=40 simtime=0.57
+[20:41:39.120 I] Global[scripts/bench/global.lua]:	BENCH route cell=-2,-9 pos=(-11000,-69994) simtime=0.57
+[20:41:43.583 I] Unloading cell Bitter Coast Region (-1, -10)
+[20:41:43.584 I] Unloading cell Bitter Coast Region (-3, -10)
+[20:41:43.584 I] Unloading cell Seyda Neen (-2, -10)
+[20:41:43.585 I] Loading cell Ascadian Isles Region (-2, -7)
+[20:41:43.586 I] Loading cell Ascadian Isles Region (-1, -7)
+[20:41:43.587 I] Loading cell Ascadian Isles Region (-3, -7)
+[20:41:43.594 I] Global[scripts/bench/global.lua]:	BENCH route cell=-2,-8 pos=(-11000,-65530) simtime=5.04
+[20:41:51.917 I] Unloading cell Bitter Coast Region (-1, -9)
+[20:41:51.917 I] Unloading cell Seyda Neen (-2, -9)
+[20:41:51.918 E] Error: Unable to write fog, can't find a png ReaderWriter
+[20:41:51.918 I] Unloading cell Bitter Coast Region (-3, -9)
+[20:41:51.919 I] Loading cell Ascadian Isles Region (-2, -6)
+[20:41:51.925 I] Loading cell Ascadian Isles Region (-1, -6)
+[20:41:51.928 I] Loading cell Ascadian Isles Region (-3, -6)
+[20:41:51.933 I] Global[scripts/bench/global.lua]:	BENCH route cell=-2,-7 pos=(-12164,-57340) simtime=13.37
+[20:42:00.371 I] Unloading cell Bitter Coast Region (-3, -8)
+[20:42:00.371 I] Unloading cell Bitter Coast Region (-2, -8)
+[20:42:00.372 E] Error: Unable to write fog, can't find a png ReaderWriter
+[20:42:00.372 I] Unloading cell Ascadian Isles Region (-1, -8)
+[20:42:00.372 I] Loading cell Ascadian Isles Region (-2, -5)
+[20:42:00.373 I] Loading cell Ascadian Isles Region (-1, -5)
+[20:42:00.376 I] Loading cell Ascadian Isles Region (-3, -5)
+[20:42:00.379 I] Global[scripts/bench/global.lua]:	BENCH route cell=-2,-6 pos=(-14215,-49138) simtime=21.82
+[20:42:08.805 I] Unloading cell Ascadian Isles Region (-1, -7)
+[20:42:08.805 I] Unloading cell Ascadian Isles Region (-3, -7)
+[20:42:08.806 I] Unloading cell Ascadian Isles Region (-2, -7)
+[20:42:08.806 E] Error: Unable to write fog, can't find a png ReaderWriter
+[20:42:08.806 I] Loading cell Ascadian Isles Region (-2, -4)
+[20:42:08.807 I] Loading cell Ascadian Isles Region (-1, -4)
+[20:42:08.809 I] Loading cell Ascadian Isles Region (-3, -4)
+[20:42:08.813 I] Global[scripts/bench/global.lua]:	BENCH route cell=-2,-5 pos=(-16261,-40955) simtime=30.26
+[20:42:09.317 I] Unloading cell Ascadian Isles Region (-1, -4)
+[20:42:09.317 I] Unloading cell Ascadian Isles Region (-1, -5)
+[20:42:09.318 I] Unloading cell Ascadian Isles Region (-1, -6)
+[20:42:09.318 I] Loading cell Ascadian Isles Region (-4, -5)
+[20:42:09.320 I] Loading cell Ascadian Isles Region (-4, -4)
+[20:42:09.323 I] Loading cell Bitter Coast Region (-4, -6)
+[20:42:09.329 I] Global[scripts/bench/global.lua]:	BENCH route cell=-3,-5 pos=(-16385,-40459) simtime=30.77
+[20:42:12.065 I] Saving shader settings file: <project>/harness/results/20260906-2038-ba7009c31-exitfix-all/overlay/shaders.yaml
+[20:42:12.065 I] Saving Lua storage "<project>/harness/results/20260906-2038-ba7009c31-exitfix-all/overlay/global_storage.bin" (140 bytes)
+[20:42:12.065 I] Saving Lua storage "<project>/harness/results/20260906-2038-ba7009c31-exitfix-all/overlay/player_storage.bin" (878 bytes)
+[20:42:12.101 I] Saved input bindings: <project>/harness/results/20260906-2038-ba7009c31-exitfix-all/overlay/input_v3.xml
+[20:42:12.134 I] Quitting peacefully.

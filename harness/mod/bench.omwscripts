@@ -1,0 +1,2 @@
+GLOBAL: scripts/bench/global.lua
+PLAYER: scripts/bench/player.lua

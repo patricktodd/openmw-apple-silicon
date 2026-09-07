@@ -1,0 +1,149 @@
+[00:54:21.713 *] Crash handler installed
+[00:54:21.787 *] Loading config file: <project>/openmw/build/OpenMW.app/Contents/Resources/openmw.cfg
+[00:54:21.787 *] Loading config file: <project>/harness/config/openmw.cfg
+[00:54:21.788 *] Loading config file: <project>/harness/results/20260906-0049-0b30e7ff4-m2c-core/overlay/openmw.cfg
+[00:54:21.788 *] Logs dir: <project>/harness/results/20260906-0049-0b30e7ff4-m2c-core/overlay
+[00:54:21.788 *] User data dir: <project>/harness/userdata
+[00:54:21.788 *] Screenshots dir: <project>/harness/userdata/screenshots
+[00:54:21.788 I] OpenMW version 0.52.0
+[00:54:21.788 I] Revision: 0b30e7ff48
+[00:54:21.788 I] Loading settings file: <project>/openmw/build/OpenMW.app/Contents/Resources/defaults.bin
+[00:54:21.789 I] Loading settings file: <project>/harness/config/settings.cfg
+[00:54:21.789 I] Loading settings file: <project>/harness/results/20260906-0049-0b30e7ff4-m2c-core/overlay/settings.cfg
+[00:54:21.789 I] Using default (English) font encoding.
+[00:54:21.789 W] No such dir: <home>/Library/Application Support/openmw/data
+[00:54:21.789 I] OSG version: 3.6.5
+[00:54:21.789 I] SDL version: 2.32.10
+[00:54:21.789 I] Loading shader settings file: <project>/harness/results/20260906-0049-0b30e7ff4-m2c-core/overlay/shaders.yaml
+[00:54:21.817 E] Error: Failed to read window icon, no png readerwriter found
+[00:54:21.817 W] Requesting OpenGL 4.1 core profile context
+[00:54:21.841 I] OpenGL Vendor: Apple
+[00:54:21.841 I] OpenGL Renderer: Apple M5 Pro
+[00:54:21.841 I] OpenGL Version: 4.1 Metal - 90.5
+[00:54:21.841 I] Core profile: granted 19 version-implied GL features on a GL 4.1 context
+[00:54:21.841 I] Core profile: vertex attribute aliasing and matrix uniforms enabled, 26 fixed-function modes disabled
+[00:54:21.841 W] GL_ARB_clip_control not supported: disabling reverse-z depth buffer
+[00:54:21.841 I] Adding BSA archive <project>/Morrowind/Data Files/Morrowind.bsa
+[00:54:21.842 I] Adding BSA archive <project>/Morrowind/Data Files/Tribunal.bsa
+[00:54:21.843 I] Adding BSA archive <project>/Morrowind/Data Files/Bloodmoon.bsa
+[00:54:21.843 I] Adding data directory <project>/openmw/build/OpenMW.app/Contents/Resources/../Resources/resources/vfs
+[00:54:21.843 I] Adding data directory <project>/openmw/build/OpenMW.app/Contents/Resources/../Resources/resources/vfs-mw
+[00:54:21.844 I] Adding data directory <project>/Morrowind/Data Files
+[00:54:21.859 I] Adding data directory <project>/harness/mod
+[00:54:21.864 I] Preferred locales: gmst en
+[00:54:21.864 I] Initializing LuaUtil::LuaState without profiler
+[00:54:21.864 I] Lua version: Lua 5.1.4 (LuaJIT 2.1.1767980792)
+[00:54:21.864 I] Loading keybindings file: <project>/harness/results/20260906-0049-0b30e7ff4-m2c-core/overlay/input_v3.xml
+[00:54:21.864 I] Loading TrueType font file fonts/mysticcards.omwfont
+[00:54:21.867 I] Loading TrueType font file fonts/demonicletters.omwfont
+[00:54:21.868 I] Loading TrueType font file fonts/dejavulgcsansmono.omwfont
+[00:54:21.876 I] Sound disabled.
+[00:54:21.877 I] Loading Lua storage "<project>/harness/results/20260906-0049-0b30e7ff4-m2c-core/overlay/global_storage.bin" (140 bytes)
+[00:54:21.877 I] Loading Lua storage "<project>/harness/results/20260906-0049-0b30e7ff4-m2c-core/overlay/player_storage.bin" (878 bytes)
+[00:54:21.880 I] Loading content file builtin.omwscripts
+[00:54:21.880 I] Loading content file Morrowind.esm
+[00:54:21.880 E] Error loading splash/splash_clanndaddy.tga: no readerwriter for 'tga' found
+[00:54:22.076 I] Loading content file Tribunal.esm
+[00:54:22.095 I] Loading content file Bloodmoon.esm
+[00:54:22.120 I] Loading content file bench.omwscripts
+[00:54:22.120 V] Lua scripts configuration (45 scripts):
+[00:54:22.120 V] #0 MENU PLAYER : scripts/omw/mwui/init.lua
+[00:54:22.120 V] #1 MENU : scripts/omw/settings/menu.lua
+[00:54:22.120 V] #2 PLAYER : scripts/omw/settings/player.lua
+[00:54:22.120 V] #3 GLOBAL : scripts/omw/settings/global.lua
+[00:54:22.120 V] #4 GLOBAL : scripts/omw/activationhandlers.lua
+[00:54:22.120 V] #5 GLOBAL : scripts/omw/usehandlers.lua
+[00:54:22.120 V] #6 GLOBAL : scripts/omw/worldeventhandlers.lua
+[00:54:22.120 V] #7 GLOBAL : scripts/omw/crimes.lua
+[00:54:22.120 V] #8 PLAYER CREATURE NPC : scripts/omw/mechanics/animationcontroller.lua
+[00:54:22.120 V] #9 PLAYER : scripts/omw/skillhandlers.lua
+[00:54:22.120 V] #10 PLAYER : scripts/omw/mechanics/playercontroller.lua
+[00:54:22.120 V] #11 MENU : scripts/omw/camera/settings.lua
+[00:54:22.120 V] #12 MENU : scripts/omw/input/settings.lua
+[00:54:22.120 V] #13 PLAYER : scripts/omw/input/playercontrols.lua
+[00:54:22.120 V] #14 PLAYER : scripts/omw/camera/camera.lua
+[00:54:22.120 V] #15 PLAYER : scripts/omw/input/actionbindings.lua
+[00:54:22.120 V] #16 PLAYER : scripts/omw/input/smoothmovement.lua
+[00:54:22.120 V] #17 PLAYER : scripts/omw/input/gamepadcontrols.lua
+[00:54:22.120 V] #18 NPC CREATURE : scripts/omw/ai.lua
+[00:54:22.120 V] #19 GLOBAL : scripts/omw/mechanics/globalcontroller.lua
+[00:54:22.120 V] #20 PLAYER CREATURE NPC : scripts/omw/mechanics/actorcontroller.lua
+[00:54:22.120 V] #21 PLAYER NPC CREATURE : scripts/omw/combat/interface_local.lua
+[00:54:22.120 V] #22 GLOBAL : scripts/omw/combat/interface_global.lua
+[00:54:22.120 V] #23 PLAYER CREATURE NPC : scripts/omw/spellcasting/interface_local.lua
+[00:54:22.120 V] #24 GLOBAL : scripts/omw/spellcasting/interface_global.lua
+[00:54:22.120 V] #25 GLOBAL : scripts/omw/mechanics/projectiles.lua
+[00:54:22.120 V] #26 PLAYER : scripts/omw/ui.lua
+[00:54:22.120 V] #27 MENU : scripts/omw/console/menu.lua
+[00:54:22.120 V] #28 PLAYER : scripts/omw/console/player.lua
+[00:54:22.121 V] #29 GLOBAL : scripts/omw/console/global.lua
+[00:54:22.121 V] #30 CUSTOM : scripts/omw/console/local.lua
+[00:54:22.121 V] #31 NPC CREATURE : scripts/omw/music/actor.lua
+[00:54:22.121 V] #32 GLOBAL : scripts/omw/cellhandlers.lua
+[00:54:22.121 V] #33 GLOBAL : scripts/omw/combat/global.lua
+[00:54:22.121 V] #34 PLAYER : scripts/omw/combat/settingspage.lua
+[00:54:22.121 V] #35 PLAYER NPC CREATURE : scripts/omw/combat/local.lua
+[00:54:22.121 V] #36 PLAYER : scripts/omw/music/music.lua
+[00:54:22.121 V] #37 MENU : scripts/omw/music/settings.lua
+[00:54:22.121 V] #38 PLAYER : scripts/omw/playerskillhandlers.lua
+[00:54:22.121 V] #39 LOAD : scripts/omw/esmfallbacks.lua
+[00:54:22.121 V] #40 PLAYER CREATURE NPC : scripts/omw/spellcasting/local.lua
+[00:54:22.121 V] #41 DOOR CONTAINER : scripts/omw/spellcasting/lockable.lua
+[00:54:22.121 V] #42 GLOBAL : scripts/omw/spellcasting/global.lua
+[00:54:22.121 V] #43 GLOBAL : scripts/bench/global.lua
+[00:54:22.121 V] #44 PLAYER : scripts/bench/player.lua
+[00:54:22.131 V] Enchantment "test magic axe": dropping unexpected skill argument of "FortifyMaximumMagicka" effect
+[00:54:22.207 I] Using 1 async physics threads
+[00:54:22.207 I] Using <project>/harness/userdata/navmesh.db to store navigation mesh cache
+[00:54:22.207 V] Using idle priority for thread=0x16fa63000
+[00:54:22.207 I] Reserving texture units for shadow maps: 13..15
+[00:54:22.209 I] Reserving texture unit for opaque depth texture: 12
+[00:54:22.209 I] Reserving texture unit for opaque color texture: 11
+[00:54:22.209 V] Disabling Multiview (disabled by config)
+[00:54:22.212 V] Language file "l10n/Interface/gmst.yaml" is enabled
+[00:54:22.213 V] Language file "l10n/Interface/en.yaml" is enabled
+[00:54:22.221 V] Language file "l10n/OMWEngine/gmst.yaml" is enabled
+[00:54:22.222 V] Language file "l10n/OMWEngine/en.yaml" is enabled
+[00:54:22.231 V] Language file "l10n/OMWShaders/en.yaml" is enabled
+[00:54:22.239 V] Language file "l10n/OMWCamera/en.yaml" is enabled
+[00:54:22.240 V] Language file "l10n/OMWControls/en.yaml" is enabled
+[00:54:22.240 V] Language file "l10n/interface/gmst.yaml" is enabled
+[00:54:22.240 V] Language file "l10n/interface/en.yaml" is enabled
+[00:54:22.241 V] Language file "l10n/Calendar/gmst.yaml" is enabled
+[00:54:22.241 V] Language file "l10n/Calendar/en.yaml" is enabled
+[00:54:22.241 V] Language file "l10n/OMWMusic/en.yaml" is enabled
+[00:54:22.241 I] OSG stats will be written to: <project>/harness/results/20260906-0049-0b30e7ff4-m2c-core/balmora-r3-stats.txt
+[00:54:22.246 I] Starting a new game
+[00:54:22.248 V] Language file "l10n/Mechanics/gmst.yaml" is enabled
+[00:54:22.249 E] Error loading splash/splash_skeleton.tga: no readerwriter for 'tga' found
+[00:54:22.274 E] Error loading splash/splash_hunger.tga: no readerwriter for 'tga' found
+[00:54:22.274 I] Loading cell Balmora (-2, -2)
+[00:54:22.292 I] Loading cell West Gash Region (-2, -1)
+[00:54:22.302 I] Loading cell West Gash Region (-1, -2)
+[00:54:22.308 I] Loading cell Balmora (-3, -2)
+[00:54:22.333 I] Loading cell West Gash Region (-2, -3)
+[00:54:22.341 I] Loading cell West Gash Region (-1, -1)
+[00:54:22.344 I] Loading cell West Gash Region (-3, -1)
+[00:54:22.346 I] Loading cell Moonmoth Legion Fort (-1, -3)
+[00:54:22.359 I] Loading cell Balmora (-3, -3)
+[00:54:22.362 V] Controller R2_Claw02 present more than once in meshes/r/xsiltstrider.kf, ignoring later version
+[00:54:22.379 V] Language file "l10n/OMWCombat/en.yaml" is enabled
+[00:54:22.392 I] Warning: OutsideBanner line 38, column 6 (endif): endif without matching if/elseif
+[00:54:22.409 I] Global[scripts/bench/global.lua]:	BENCH station=balmora startcell="balmora" frame=1
+[00:54:22.491 I] Unloading cell West Gash Region (-3, -1)
+[00:54:22.491 I] Unloading cell West Gash Region (-2, -1)
+[00:54:22.492 I] Unloading cell Moonmoth Legion Fort (-1, -3)
+[00:54:22.492 I] Unloading cell West Gash Region (-1, -2)
+[00:54:22.492 I] Unloading cell West Gash Region (-1, -1)
+[00:54:22.493 I] Loading cell West Gash Region (-4, -3)
+[00:54:22.504 I] Loading cell Ascadian Isles Region (-3, -4)
+[00:54:22.510 I] Loading cell Balmora (-4, -2)
+[00:54:22.514 I] Loading cell Ascadian Isles Region (-2, -4)
+[00:54:22.515 I] Loading cell Ascadian Isles Region (-4, -4)
+[00:54:22.531 I] L@0x1[scripts/bench/player.lua]:	BENCH camera station=balmora yaw=0 pitch=2
+[00:54:22.885 I] Global[scripts/bench/global.lua]:	BENCH station=balmora ready frame=40 simtime=0.49
+[00:55:15.701 I] Saving shader settings file: <project>/harness/results/20260906-0049-0b30e7ff4-m2c-core/overlay/shaders.yaml
+[00:55:15.701 I] Saving Lua storage "<project>/harness/results/20260906-0049-0b30e7ff4-m2c-core/overlay/global_storage.bin" (140 bytes)
+[00:55:15.701 I] Saving Lua storage "<project>/harness/results/20260906-0049-0b30e7ff4-m2c-core/overlay/player_storage.bin" (878 bytes)
+[00:55:15.736 I] Saved input bindings: <project>/harness/results/20260906-0049-0b30e7ff4-m2c-core/overlay/input_v3.xml
+[00:55:15.771 I] Quitting peacefully.

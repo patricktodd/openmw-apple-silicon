@@ -1,0 +1,1 @@
+{"label":"m4-heavy-core","sha":"85eda9729","date":"2026-09-06T03:11:09-04:00","overlays":"overlays/core.cfg overlays/heavy.cfg","repeats":3,"hold":30,"load":14,"warm":10,"stations":"seyda vivec","machine":"Apple M5 Pro"}

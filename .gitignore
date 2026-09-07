@@ -1,0 +1,15 @@
+# Never publish game data, installers, dependencies, build trees or other projects' clones.
+Morrowind/
+GOG Installer/
+deps/
+openmw/
+harness/userdata/
+harness/config/*.log
+harness/config/*.bin
+harness/config/console_history.txt
+harness/tools/winbounds
+# Raw per-frame statistics are large; the summaries are committed.
+harness/results/**/*-stats.txt
+harness/results/**/diff/
+*.pyc
+.DS_Store
