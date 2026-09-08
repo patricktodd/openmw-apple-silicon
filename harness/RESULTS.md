@@ -114,17 +114,4 @@ Open terrain, interior, sky and the GUI station were flat in the full nine-stati
 `gl_ClipDistance` from `clipPlaneN` uniforms in a separately linked `lib/core/clip.glsl`, a discard fallback for GLES, and a legacy `gl_ClipVertex` unit for GLSL 120. Tested as !5502 merged onto the `core-profile` reference tree with !5502's clip-plane code taken in full and this branch's clip code dropped.
 
 - Compatibility context (`clip_legacy.glsl` path): zero GL errors, exit 0, screenshots match (Vivec 0.3 %, Seyda 2.4 %).
-- Core context (linked `clip.glsl`): segmentation fault at address 0 inside Apple's GLSL linker while loading the first cell, on the draw thread, during `osgUtil::GLObjectsVisitor` compilation of an osgParticle drawable's state set. Reproducible on every launch:
-
-  ```
-  GLEngine`glLinkProgramARB_Exec
-  libGLProgrammability.dylib`ShLink
-  libGLProgrammability.dylib`glpLinkProgram
-  libGLProgrammability.dylib`glpASTMergePhase2
-  libGLProgrammability.dylib`phase2AddDef / phase2ProcessRawCall / phase2Process (recursive)
-  libGLProgrammability.dylib`phase2ProcessLValue
-  libGLProgrammability.dylib`BitSetSetRangeEquals → BitSetSetSizeEquals   ← SIGSEGV, address 0x0
-  ```
-
-  This is the same failure the `core-profile` branch hit when its clip code was first written as a linked helper; the trigger is `gl_ClipDistance` written inside a function in a different compilation unit from the shader that calls it.
-- Same tree with `applyClipPlanes` as a macro in `lib/core/vertex.h.glsl` (the `clipPlaneN` uniforms declared there through the same `@foreach`): zero GL errors, exit 0, screenshots match this branch's core runs (Vivec 0.3 %, Seyda 2.5 %). A plain function definition in that header does not link ("duplicate definition of function 'applyClipPlanes'"), since the header is included by several linked units (`-mr5502-core-inline`). The experiment hard-codes two planes and omits the GLES conditional branch. It also only works because on the core profile every shader is compiled as GLSL 330: `gl_ClipDistance` does not exist in `#version 120`, so a compatibility context that qualifies for native clip distances (GL 3.0+ on Windows or Linux, where the main shaders are still 120) needs the separately linked 330 unit, which is why !5502 links it. The two are not in conflict; the crash is only reachable on a core context.
+- Core context (linked `clip.glsl`): on 2026-09-07 at 00:57 and 00:58, two consecutive launches (Seyda Neen, Vivec) crashed while loading the first cell with a segmentation fault at address 0 inside Apple's GLSL linker, on the draw thread, during `osgUtil::GLObjectsVisitor` compilation of an osgParticle drawable's state set (`glLinkProgramARB_Exec` → `glpLinkProgram` → `glpASTMergePhase2` → `phase2ProcessLValue` → `BitSetSetSizeEquals`). Both runs happened while a separate engine build was running on the same machine. **The crash has not reproduced since**: fourteen launches on 2026-09-08 with the same binary and shader files, across the old and the current fork OSG libraries, with and without an explicit `out float gl_ClipDistance[2];` redeclaration in `clip.glsl`, with the driver's Metal shader cache warm and cleared, under synthetic CPU load and under a real concurrent build, all exited 0 with zero GL errors and screenshots matching this branch's core runs. The cause of the two crashes is unknown; the earlier attribution to the separately linked unit, and the macro and redeclaration variants offered as fixes, are withdrawn. !5502's design as written runs on this machine's core context.
