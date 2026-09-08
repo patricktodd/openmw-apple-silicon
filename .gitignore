@@ -17,4 +17,4 @@ harness/results/**/diff/
 # working notes never ship
 submissions/
 MR-DRAFT.md
-*.log
+build-configure.log
