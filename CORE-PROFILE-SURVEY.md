@@ -32,7 +32,7 @@ The post-processing system (`.omwfx` techniques) already had an equivalent vocab
 
 ### Clip planes through `gl_ClipDistance`
 
-`glClipPlane` does not exist on core. The water code keeps its eye-space planes in `clipPlane`/`clipPlane1` uniforms and the vertex shaders write `gl_ClipDistance[0]`/`[1]` from them, enabling the corresponding `GL_CLIP_DISTANCEn` modes (numerically identical to `GL_CLIP_PLANEn`, so the existing mode toggles survive). The distances are written by a macro rather than a linked helper function: defining the helper in a separately compiled unit crashed Apple's GLSL linker when `gl_ClipDistance` was touched across compilation units.
+`glClipPlane` does not exist on core. The water code keeps its eye-space planes in `clipPlane`/`clipPlane1` uniforms and the vertex shaders write `gl_ClipDistance[0]`/`[1]` from them, enabling the corresponding `GL_CLIP_DISTANCEn` modes (numerically identical to `GL_CLIP_PLANEn`, so the existing mode toggles survive). The distances are written by a macro in the calling shader's own compilation unit rather than by a linked helper function. (An early linked variant crashed inside Apple's GLSL linker on this machine; that crash could not be reproduced later, see RESULTS.md, so the macro is a choice, not a workaround for a confirmed driver bug.)
 
 ### Formats and primitives
 
@@ -73,7 +73,7 @@ Everything below was found with the harness (screenshot comparison against the c
 
 **Shaders and drivers**
 
-- Apple's GLSL linker crashes when `gl_ClipDistance` is written from a separately compiled unit; hence the macro.
+- An early variant that wrote `gl_ClipDistance` from a separately linked unit crashed inside Apple's GLSL linker on this machine; the same crash appeared twice while testing !5502's linked design and then could not be reproduced in seventeen further launches (RESULTS.md). Cause unknown; the macro stays because it is simple, not because linking is known to be broken.
 - `textureProj` on a `sampler2DShadow` returns a float in core GLSL where `shadow2DProj` returned a `vec4`; the token maps to a `vec4`-returning macro so the `.r` swizzles keep working.
 - The `GL_EXT_gpu_shader4` pragma is rejected by core contexts (its features are native in 330); it is replaced by the `@gpuShader4Extension` token, which is empty on core, so no `#extension` line is left inside a disabled `#if` block (see the design section for why that matters).
 - A local variable named `textureSize` in `alpha.glsl` shadowed the GLSL 330 built-in function.
