@@ -12,21 +12,19 @@ Two repositories carry the code. In both, compatibility stays the default and ev
 
 72 files, about 980 lines added. Each commit builds on its own and references Feature #5251. The C++ follows the project's naming, include-grouping and Doxygen conventions and passes its clang-format configuration; the branch was also given a second, line-by-line review pass against those conventions before submission (LLM-assisted, like the rest). This branch is the reference tree; it is offered upstream in pieces. Once merged, the only user-visible change is one setting, off by default everywhere (on macOS it selects the 4.1 core context); the three ungated changes listed above produce the same output on the compatibility profile (RESULTS.md, last section). OpenMW-CS reads the same settings file but never enters core mode: the flag the components consult is set only by the engine.
 
-## OpenSceneGraph — branch `core-profile-fork-v2`, five commits over OpenMW/osg `3.6`
+## OpenSceneGraph — branch `core-profile-fork-v2`, three commits over OpenMW/osg `3.6` (`b8d836d001`, 2026-09-10)
 
-The two bug fixes (bold below) are also on their own branches as [OpenMW/osg#50](https://github.com/OpenMW/osg/pull/50) and [OpenMW/osg#51](https://github.com/OpenMW/osg/pull/51).
+Two further fixes found during the port were merged into OpenMW/osg `3.6` on 2026-09-10 and are no longer on the branch: the `GLExtensions` static-destruction crash, as a backport of mainline's 2019 fix ([OpenMW/osg#50](https://github.com/OpenMW/osg/pull/50)), and the stale vertex-array-object pointers after a sibling array is replaced, fixed by having `VertexArrayState::dirty()` re-dispatch every active array ([OpenMW/osg#51](https://github.com/OpenMW/osg/pull/51)). Both apply to any VAO user on any profile.
 
 OpenMW builds its OpenSceneGraph fork with `OPENGL_PROFILE=GL2`, and a GL2 build has no runtime notion of a core context. These commits give it one: `GLExtensions::isCoreProfile` is read once from `GL_CONTEXT_PROFILE_MASK` and cached on the `osg::State`, and every behavioural change is gated on it (or, for osgText, on the `SHADER_GL3` display-settings hint), so a stock GL2 build on a compatibility context is unchanged.
 
 | commit | what |
 |---|---|
-| `168788c89a` | **`GLExtensions` static-destruction crash: upstream OSG's fix, backported.** `~GLExtensions` wrote into file-scope statics that can already be destroyed during `exit()`; any application whose `GLExtensions` outlives static destruction (every VAO user on a GL2 build) can hit it. Mainline OSG fixed this in 2019 (commit `97f955b2`, an `observer_ptr` to the registries) and OpenMW's `3.6` branch predates it; this is that commit cherry-picked, replacing an equivalent fix of our own after review on the pull request. Independent of the core-profile work. |
-| `3ae795bf3e` | **`VertexArrayState::dirty()` forces every active array to be dispatched again.** A bug in stock OSG's VAO path that any application can hit: when one of a drawable's arrays is replaced, the others sharing its buffer object move when the buffer is recompiled, but `setArray()` skipped them as unchanged and the VAO kept their old offsets. `Drawable::dirtyGLObjects()` already reaches `dirty()`; it now invalidates the recorded modified count of every active array (nine lines). Replaces a first version that tracked offsets, after review on the pull request. |
-| `c4a6a17d22` | Detect the context profile; skip the compiled-in `glMatrixMode`/`glLoadMatrix` calls and the `GL_MAX_TEXTURE_COORDS` query on core; accept VBO, PBO, VAO, texture swizzle and packed depth-stencil by GL version as well as extension string. Without this nothing renders. |
-| `1c05a3ddb2` | The fixed-function attributes (`AlphaFunc`, `Material`, `LightModel`, `Light`, `Fog`, `TexEnv`, `TexEnvCombine`, `TexGen`, `ShadeModel`, `LineStipple`, `PolygonStipple`, `ColorMatrix`) become no-ops on core; `GL_CLAMP` mapped to `CLAMP_TO_EDGE` and no `GL_DEPTH_TEXTURE_MODE` there; osgParticle without quads or attribute push/pop. |
-| `f5c1361c4a` | osgText glyph pages as R/RG under the GL3 shader hint; no compile-time warm-up draw on core (it draws with no program bound). |
+| `5337edbee4` | Detect the context profile; skip the compiled-in `glMatrixMode`/`glLoadMatrix` calls and the `GL_MAX_TEXTURE_COORDS` query on core; accept VBO, PBO, VAO, texture swizzle and packed depth-stencil by GL version as well as extension string. Without this nothing renders. |
+| `a773f30a47` | The fixed-function attributes (`AlphaFunc`, `Material`, `LightModel`, `Light`, `Fog`, `TexEnv`, `TexEnvCombine`, `TexGen`, `ShadeModel`, `LineStipple`, `PolygonStipple`, `ColorMatrix`) become no-ops on core; `GL_CLAMP` mapped to `CLAMP_TO_EDGE` and no `GL_DEPTH_TEXTURE_MODE` there; osgParticle without quads or attribute push/pop. |
+| `dd9ccb2b3e` | osgText glyph pages as R/RG under the GL3 shader hint; no compile-time warm-up draw on core (it draws with no program bound). |
 
-The `VertexArrayState` fix applies to mainline OpenSceneGraph as well (mainline `master` still has the offset-only check at the time of writing); the `GLExtensions` one is mainline's own commit.
+The `VertexArrayState` fix applies to mainline OpenSceneGraph as well (mainline `master` still has the offset-only check at the time of writing).
 
 ## Diagnostics
 
